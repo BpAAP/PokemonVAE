@@ -17,6 +17,8 @@ canvasB = document.getElementById("canvas2")
 encodedA = 0
 encodedB = 0
 
+
+
 generationTabButton.onclick = function(){
     if (!generationTabActive) {
         generationTabActive = true
