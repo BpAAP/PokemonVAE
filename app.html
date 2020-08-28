@@ -12,8 +12,30 @@
     <title>Pokemon VAE</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <h1>Pokemon Generation and Interpolation</h1>
 
+    <p>
+        This is an app for trying out a VAE trained on 128x128 Pokemon images. See https://www.benedekpapp.page/projects/pokemon-generation-and-interpolation.
+        Pick what you want to do from the tabs below. This app includes a subset of the images used in training.
+    </p>
+
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <button class="nav-link active" id="generation-tab-button">Generation</button>
+        </li>
+        <li class="nav-item">
+          <button class="nav-link" id="interpolation-tab-button">Interpolation</button>
+        </li>
+    </ul>
+
+    <div class="d-block" id="generation-tab">
+        <h3>Generation</h3>
+    </div>
+
+    <div class="d-none" id="interpolation-tab">
+        <h3>Interpolation</h3>
+    </div>
+    
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

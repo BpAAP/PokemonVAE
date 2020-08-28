@@ -13,7 +13,7 @@ This repo is mirrored in a Glitch project, you can try it out at:
 
 ## Training
 The model used in the demo was trained with Keras in Python on Google's free Colab platform using GPU acceleration. You can view and run the annotated code here:
-`URL`
+`https://colab.research.google.com/drive/1xibaC9LFv2df-1I1p0QoKbZJk3VT4ddW?usp=sharing`
 
 ## JavaScript App
 The JavaScript app loads the saved model from this github.
