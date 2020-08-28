@@ -32,15 +32,54 @@
         <h3>Generation</h3>
     </div>
 
-    <div class="d-none" id="interpolation-tab">
+    <div class="d-none container" id="interpolation-tab">
         <h3>Interpolation</h3>
+        <p>
+            Interpolation works by selecting 2 existing images, encoding them to the latent space. A new image is generated from an interpolation between these two vectors. Pick two images from below to be:
+            <span class="border border-success">Image A</span> and <span class="border border-danger">Image B</span>
+            
+        </p>
+        <div id="imageExamples" class="container d-flex justify-content-center">
+            <div class="row">
+                <img src="/" class="img-thumbnail col-4 col-md-3 col-lg-2 border " id="img1" onclick="imageClicked(this)">
+                <img src="/" class="img-thumbnail col-4 col-md-3 col-lg-2 border " id="img2" onclick="imageClicked(this)">
+                <img src="/" class="img-thumbnail col-4 col-md-3 col-lg-2 border " id="img3" onclick="imageClicked(this)">
+                <img src="/" class="img-thumbnail col-4 col-md-3 col-lg-2 border " id="img4" onclick="imageClicked(this)">
+                <img src="/" class="img-thumbnail col-4 col-md-3 col-lg-2 border " id="img5" onclick="imageClicked(this)">
+                <img src="/" class="img-thumbnail col-4 col-md-3 col-lg-2 border " id="img6" onclick="imageClicked(this)">
+                <img src="/" class="img-thumbnail col-4 col-md-3 col-lg-2 border " id="img7" onclick="imageClicked(this)">
+                <img src="/" class="img-thumbnail col-4 col-md-3 col-lg-2 border " id="img8" onclick="imageClicked(this)">
+                <img src="/" class="img-thumbnail col-4 col-md-3 col-lg-2 border " id="img9" onclick="imageClicked(this)">
+                <img src="/" class="img-thumbnail col-4 col-md-3 col-lg-2 border " id="img10" onclick="imageClicked(this)">
+                <img src="/" class="img-thumbnail col-4 col-md-3 col-lg-2 border " id="img11" onclick="imageClicked(this)">
+                <img src="/" class="img-thumbnail col-4 col-md-3 col-lg-2 border " id="img12" onclick="imageClicked(this)">
+            </div>
+            <div class="row">
+                <button id="interpolateGetNewImages" type="button" class="btn btn-secondary col-12">Get New Images</button>
+            </div>
+        </div>
+        
+        <hr>
+
+        <form>
+            <div class="form-group">
+              <label for="interpolationFactor">Interpolation factor (Left:100% A, Right:100% B)</label>
+              <input type="range" class="form-control-range" id="interpolationFactor">
+            </div>
+          </form>
+
+          <canvas class="" id="canvas1"></canvas>
+          <canvas class="" id="canvas2"></canvas>
     </div>
+    
+
     
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.0.0/dist/tf.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
