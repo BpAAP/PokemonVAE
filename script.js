@@ -125,7 +125,7 @@ interpolationSlider.onchange = async function(){
     }    
 }
 
-async function load_encoder(){
+async function load_encoder(){LeakyReLU()
     const model = await tf.loadLayersModel('https://raw.githubusercontent.com/BpAAP/PokemonVAE/master/js_model/js_encoder/model.json')
     await model.save('localstorage://models/encoder')
     encoder_loaded = true
