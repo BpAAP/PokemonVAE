@@ -3,7 +3,7 @@
 ### Development paused due to compatibility issue between TF and TFJS
 
 ## Overview
-This project uses a Variational Autoencoder to encode 128x128 pixel images of pokemon to a 200 dimensional latent space. Then decodes this latent vector to another 128x128 image.
+This project uses a Variational Autoencoder to encode 128x128 pixel images of pokemon to a 1000 dimensional latent space. Then decodes this latent vector to another 128x128 image.
 
 This repo specifically contains a demo webapp for playing around with the trained model.
 
